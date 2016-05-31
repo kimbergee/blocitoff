@@ -1,2 +1,12 @@
-<h1>Welcome to Kimber's Blocitoff</h1>
-<p id="index-title">Home page for Blocitoff<p>
+<br>
+<div class="jumbotron">
+  <h1>Welcome to Kimber's Blocitoff</h1>
+  <p>The most efficient to-do list</p>
+
+  <% unless user_signed_in? %>
+    <p>
+      <%= link_to "Sign In", new_user_session_path %> or
+		<%= link_to "Sign Up", new_user_registration_path %>
+    </p>
+  <% end %>
+</div>
