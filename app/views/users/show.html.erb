@@ -9,14 +9,14 @@
         </div>
       <% end %>
       <div class="media-body">
-        <h2 class="media-heading"><%= current_user.email %> Profile Details</h2>
+        <h2 class="media-heading"><%= current_user.username.capitalize %> Profile Details</h2>
       </div>
     </div>
   </div>
 </div>
 <br>
 <p><strong>Email:</strong> <%= current_user.email %></p>
-<p><strong>Username:</strong> (fill in after merging)</p>
+<p><strong>Username:</strong> <%= current_user.username %></p>
 <p><strong>Member since:</strong> <%= current_user.created_at.strftime("%B %d, %Y") %></p>
 <p><strong>Number of items left to do on list:</strong> (to be filled in later)</p>
 <br><br>
