@@ -18,9 +18,13 @@
     </div>
   </div>
 
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h2 class="text-left">To-Do List</h2>
+    <div class="panel panel-default">
+      <div class="panel-body">
     <%= render partial: 'items/item', locals: {user: @user} %>
+  </div>
+  </div>
     <br><br>
     <%= render partial: 'items/form', locals: {user: @user} %>
   </div>
