@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-6">
     <div class="media">
       <br />
       <% avatar_url = @user.avatar_url(128) %>
@@ -9,15 +9,23 @@
         </div>
       <% end %>
       <div class="media-body">
-        <h2 class="media-heading"><%= current_user.username.capitalize %> Profile Details</h2>
+        <h3 class="media-heading"><%= current_user.username.capitalize %>'s Profile <%= link_to "(edit info)", edit_user_registration_path %></h3>
+        <br>
+        <p><strong>Email:</strong> <%= current_user.email %></p>
+        <p><strong>Username:</strong> <%= current_user.username %></p>
+        <p><strong>Member since:</strong> <%= current_user.created_at.strftime("%B %d, %Y") %></p>
       </div>
     </div>
   </div>
+
+  <div class="col-md-4">
+    <h2 class="text-left">To-Do List</h2>
+    <div class="panel panel-default">
+      <div class="panel-body">
+    <%= render partial: 'items/item', locals: {user: @user} %>
+  </div>
+  </div>
+    <br><br>
+    <%= render partial: 'items/form', locals: {user: @user} %>
+  </div>
 </div>
-<br>
-<p><strong>Email:</strong> <%= current_user.email %></p>
-<p><strong>Username:</strong> <%= current_user.username %></p>
-<p><strong>Member since:</strong> <%= current_user.created_at.strftime("%B %d, %Y") %></p>
-<p><strong>Number of items left to do on list:</strong> (to be filled in later)</p>
-<br><br>
-<%= link_to "Edit Info", edit_user_registration_path %>
