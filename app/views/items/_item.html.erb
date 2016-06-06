@@ -1,6 +1,8 @@
 <% user.items.each do |item| %>
   <% unless item.created_at.nil? %>
-    <p><strong><%= item.name %></strong><small><em> (added: <%= time_ago_in_words(item.created_at) %> ago)</em></small></p>
+    <p><%= link_to "", [item.user, item], method: :delete, class: 'glyphicon glyphicon-check' %> <strong><%= item.name %></strong><small><em> (added: <%= time_ago_in_words(item.created_at) %> ago)</em></small></p>
     <br>
   <% end %>
 <% end %>
+
+<!-- add remote: true, -->
