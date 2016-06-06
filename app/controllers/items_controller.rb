@@ -21,9 +21,13 @@ class ItemsController < ApplicationController
       flash[:notice] = "Item was completed and removed."
     else
       flash[:error] = "There was an error removing the item."
-      redirect_to @item.user
     end
     redirect_to users_show_path
+    # respond_to do |format|
+    #   format.html { redirect_to users_show_path}
+    #   format.js
+    # end
+
   end
 
 
