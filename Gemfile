@@ -13,6 +13,7 @@ gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'figaro', '1.0'
 gem 'faker'
+gem 'whenever', require: false
 
 
 group :production do
