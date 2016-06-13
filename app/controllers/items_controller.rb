@@ -10,7 +10,10 @@ class ItemsController < ApplicationController
     else
       flash[:error] = "There was an error saving your item. Please try again."
     end
-    redirect_to users_show_path
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def destroy
