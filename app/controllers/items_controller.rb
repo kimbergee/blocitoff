@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
 
   def create
     @user = User.find(params[:user_id])
-    @item = @user.items.new(item_params)
+    @item = @user.items.build(item_params)
     @item.user = current_user
 
     if @item.save
@@ -22,11 +22,10 @@ class ItemsController < ApplicationController
     else
       flash[:error] = "There was an error removing the item."
     end
-    redirect_to users_show_path
-    # respond_to do |format|
-    #   format.html { redirect_to users_show_path}
-    #   format.js
-    # end
+    respond_to do |format|
+      format.html
+      format.js
+    end
 
   end
 
