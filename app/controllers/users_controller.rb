@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
   def show
     @user = current_user
-    @item = @user.items.new
+    #@item = @user.items.new
     #@items = @user.items
   end
 end

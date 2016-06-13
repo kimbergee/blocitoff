@@ -2,7 +2,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-yxFy3Tt84CcGRj9UI7RA25hoUMpUPoFzcdPtK3hBdNgEGnh9FdKgMVM+lbAZTKN2" crossorigin="anonymous">
 </head>
 <h3><em>Add an item to your list</em></h3>
-<%= form_for [@user, @item] do |f| %>
+<%= form_for [@user, Item.new] do |f| %>
   <div class="form-group">
     <%= f.text_field :name, class: 'form-control', placeholder: "Enter item" %>
   </div>
