@@ -1,13 +1,9 @@
-// # <% if @item.valid? %>
-// #   $('#item-' +<%= @item.id %>).prepend();
-// # <% else %>
-// #   $('#item-' +<%= @item.id %>).prepend("<div class='alert alert-danger'><%= flash[:error] %></div>");
-// # <% end %>
-
-
 <% if @item.valid? %>
-  $('.js-items').prepend("<%= escape_javascript(render(@item)) %>");
+  $('.js-items').prepend("<%= escape_javascript(render (@item)) %>");
   $('.new-item').html("<%= escape_javascript(render partial: 'items/form', locals: {user: @user, item: @item}) %>");
+  // setTimeout(function() {
+  //   $('.flash').fadeOut(3000);
+  // }, 5000);
 <% else %>
   $('.flash').prepend("<div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert'>&times;</button><%= flash.now[:alert] %></div>");
   $('.new-item').html("<%= escape_javascript(render partial: 'items/form') %>");
