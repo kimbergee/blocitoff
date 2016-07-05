@@ -1,3 +1,8 @@
+<style type="text/css">
+   body { background: #5B5EA6 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+<div class="fontstyle">
+
 <div class="row">
   <div class="col-md-6">
     <div class="media">
@@ -9,7 +14,7 @@
         </div>
       <% end %>
       <div class="media-body">
-        <h3 class="media-heading"><%= current_user.username.capitalize %>'s Profile <%= link_to "(edit info)", edit_user_registration_path %></h3>
+        <h3 class="media-heading fontcaps"><%= current_user.username.capitalize %>'s Profile <%= link_to "(edit info)", edit_user_registration_path %></h3>
         <br>
         <p><strong>Email:</strong> <%= current_user.email %></p>
         <p><strong>Username:</strong> <%= current_user.username %></p>
@@ -19,7 +24,7 @@
   </div>
 
   <div class="col-md-4">
-    <h2 class="text-left">To-Do List</h2>
+    <h2 class="text-left fontcaps">To-Do List</h2>
     <div class="panel panel-default">
       <div class="panel-body">
         <div class="js-items">
@@ -34,4 +39,5 @@
       <%= render partial: 'items/form', locals: {user: @user} %>
     </div>
   </div>
+</div>
 </div>
