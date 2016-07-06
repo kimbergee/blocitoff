@@ -1,6 +1,3 @@
-<head>
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-yxFy3Tt84CcGRj9UI7RA25hoUMpUPoFzcdPtK3hBdNgEGnh9FdKgMVM+lbAZTKN2" crossorigin="anonymous">
-</head>
 <% @user.items.each do |item| %>
   <%= content_tag :div, class: 'media', id: "item-#{item.id}" do %>
     <p>

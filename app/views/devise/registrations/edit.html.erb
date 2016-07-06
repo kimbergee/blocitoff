@@ -1,14 +1,17 @@
 <head>
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-yxFy3Tt84CcGRj9UI7RA25hoUMpUPoFzcdPtK3hBdNgEGnh9FdKgMVM+lbAZTKN2" crossorigin="anonymous">
+  <style type="text/css">
+     body { background: #E0EFF1 !important; }
+  </style>
 </head>
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<div class="fontstyle">
+<h2 class="fontcaps">Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email, autofocus: true %><br />
     <%= f.label :username %><br />
     <%= f.text_field :username %>
   </div>
@@ -37,8 +40,10 @@
   </div>
 <% end %>
 
-<h3>Cancel my account</h3>
+<h3 class="fontcaps">Cancel my account</h3>
 
 <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<br>
+<%= link_to "back", :back, :class => 'link' %>
 
-<%= link_to "Back", :back %>
+</div>
