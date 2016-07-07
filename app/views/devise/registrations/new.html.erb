@@ -1,5 +1,5 @@
 <style type="text/css">
-   body { background: #E0EFF1 !important; }
+   body { background: #425E77 !important; }
 </style>
 <div class="fontstyle">
   <h2 class="fontcaps">Sign Up</h2>
@@ -8,30 +8,30 @@
     <%= devise_error_messages! %>
 
     <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %><br />
-      <%= f.label :username %><br />
-      <%= f.text_field :username %>
+      <%= f.label :email, :class => 'size20' %><br />
+      <%= f.email_field :email, :class => 'text-fontstyle', autofocus: true %><br />
+      <%= f.label :username, :class => 'size20' %><br />
+      <%= f.text_field :username, :class => 'text-fontstyle' %>
     </div>
 
     <div class="field">
-      <%= f.label :password %>
+      <%= f.label :password, :class => 'size20' %>
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
-      <%= f.password_field :password, autocomplete: "off" %>
+      <%= f.password_field :password, :class => 'text-fontstyle', autocomplete: "off" %>
     </div>
 
     <div class="field">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      <%= f.label :password_confirmation, :class => 'size20' %><br />
+      <%= f.password_field :password_confirmation, :class => 'text-fontstyle', autocomplete: "off" %>
     </div>
 
     <div class="actions">
-      <%= f.submit "Sign up" %>
+      <%= f.submit "Sign up", :class => 'button-save' %>
     </div>
 
   <% end %>
-
+<br>
 <%= render "devise/shared/links" %>
 </div>

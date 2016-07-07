@@ -12,20 +12,20 @@
 
 .navbuttons {
   background-color:transparent !important;
-  color: #8D9393 !important;
+  color: #d1d3d3 !important;
   font-family: 'Indie Flower', cursive;
   font-size: 20px;
 }
 
 #nav-barline {
-  border-color: #E0EFF1;
+  border-color: #F78F84;
 }
 
 #caps {
   text-transform: uppercase;
   text-align: center;
   font-size: 80px;
-  color: #8D9393;
+  color: #d1d3d3;
   font-weight: bold;
   font-family: 'Indie Flower', cursive;
 }
@@ -34,7 +34,7 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 60px;
-  color: #8D9393;
+  color: #d1d3d3;
   font-weight: bold;
   font-family: 'Indie Flower', cursive;
 }
@@ -45,11 +45,11 @@
 }
 
 a:hover {
-    color: #EFC050 !important;
+    color: #BCFFD8 !important;
 }
 
 .link {
-  color: #8D9393;
+  color: #d1d3d3;
   font-family: 'Indie Flower', cursive;
   font-size: 20px;
   text-decoration: none !important;
@@ -73,8 +73,8 @@ a:hover {
 .main-signup {
   font-family: 'Indie Flower', cursive;
   color: white;
-  background: #8D9393;
-  border: 1px solid #8D9393;
+  background: #F78F84;
+  border: 1px solid #F78F84;
   font-size: 17px;
   padding: 7px 12px;
   font-weight: normal;
@@ -90,7 +90,7 @@ a:hover {
 .button-save {
   font-family: 'Indie Flower', cursive;
   color: #F78F84;
-  background: #E0EFF1;
+  background: #425E77;
   border: 1px solid #F78F84;
   font-size: 12px;
   padding: 7px 12px;
@@ -104,8 +104,17 @@ a:hover {
   text-transform: uppercase;
 }
 
+.size20 {
+  font-size: 20px;
+}
+
 .fontstyle {
-  color: #8D9393;
+  color: #d1d3d3;
+  font-family: 'Indie Flower', cursive;
+}
+
+.text-fontstyle {
+  color: black;
   font-family: 'Indie Flower', cursive;
 }
 
@@ -117,7 +126,7 @@ a:hover {
 
 .panel-default {
   border: 2px solid #F78F84 !important;
-  background-color: #E0EFF1 !important;
+  background-color: #425E77 !important;
 }
 
 .glyphicon-check {
