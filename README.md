@@ -7,7 +7,16 @@ This is a self-destructing to-do list application that uses rake automation.
 + Devise is used for user authentication
 
 ##Getting Started
-+ Clone or download this repository
-+ Run bundle install
-+ Run rails s to run the project on your local server.
-+ Navigate to localhost:3000 in your browser.
+Clone or download this repository and then run:
+```
+$ bundle install
+```
+
+
+Run the project on your local server:
+```
+rails s
+```
+
+
+Navigate to `localhost:3000` in your browser.
