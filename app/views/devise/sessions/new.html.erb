@@ -1,20 +1,20 @@
 <style type="text/css">
-   body { background: #425E77 !important; }
+   body { background: #4b6b87 !important; }
 </style>
 <div class="fontstyle">
-  <h2 class="fontcaps">Log in</h2>
+  <h2 id="peach">Log in</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
-      <p><%= f.label :login, 'Email or Username', :class => 'size20' %><br />
-         <%= f.text_field :login, :class => 'text-fontstyle', autofocus: true  %>
+      <p><%= f.label :login, 'Email or Username' %><br />
+         <%= f.text_field :login, :class => 'peach-color', autofocus: true  %>
       </p>
     </div>
 
 
     <div class="field">
-      <%= f.label :password, :class => 'size20' %><br />
-      <%= f.password_field :password, :class => 'text-fontstyle', autocomplete: "off" %>
+      <%= f.label :password %><br />
+      <%= f.password_field :password, :class => 'peach-color', autocomplete: "off" %>
     </div>
 
     <% if devise_mapping.rememberable? -%>

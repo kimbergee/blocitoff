@@ -8,81 +8,86 @@
 .nav {
   margin-top: 5px;
   margin-left: -15px;
+  font-family: 'Patrick Hand SC', cursive;
+  border-color: #F76B51;
+  font-size: 20px;
 }
 
 .navbuttons {
   background-color:transparent !important;
   color: #d1d3d3 !important;
-  font-family: 'Indie Flower', cursive;
   font-size: 20px;
 }
 
-#nav-barline {
-  border-color: #F78F84;
-}
-
-#caps {
-  text-transform: uppercase;
+.app-name {
   text-align: center;
   font-size: 80px;
   color: #d1d3d3;
   font-weight: bold;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Patrick Hand SC', cursive;
 }
 
-#non-caps {
-  text-align: center;
-  font-size: 80px;
-  color: #d1d3d3;
-  font-weight: bold;
-  font-family: 'Indie Flower', cursive;
-}
-
-.aboutcaps {
-  // text-transform: uppercase;
+.about {
   text-align: center;
   font-size: 60px;
   color: #d1d3d3;
   font-weight: bold;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Patrick Hand SC', cursive;
 }
 
 .jumbotron {
   border-color: #F7786B;
   background-color:transparent !important;
 }
+a {
+  color: #d1d3d3 !important;
+}
 
 a:hover {
     color: #BCFFD8 !important;
+    text-decoration: none !important;
 }
 
 .link {
   color: #d1d3d3;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Patrick Hand SC', cursive;
   font-size: 20px;
   text-decoration: none !important;
 }
 
-#white {
-  color: white;
-  font-family: 'Indie Flower', cursive;
-  text-align: center;
-  font-size: 20px;
+#peach {
+  color: #F76B51;
+  font-family: 'Raleway', sans-serif;
 }
 
-#peach {
-  color: #F78F84;
-  font-family: 'Indie Flower', cursive;
+.peach-color {
+  color: #F76B51;
+}
+
+.raleway-text {
+  font-family: 'Raleway', sans-serif;
+  color: #F76B51;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.fontstyle {
+  color: #d1d3d3;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+
+.patrick-peach {
+  color: #F76B51;
+  font-family: 'Patrick Hand SC', cursive;
 }
 
 
 .main-signup {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Patrick Hand SC', cursive;
   color: white;
-  background: #F78F84;
-  border: 1px solid #F78F84;
+  background: #F76B51;
+  border: 1px solid #F76B51;
   font-size: 17px;
   padding: 7px 12px;
   font-weight: normal;
@@ -92,14 +97,13 @@ a:hover {
   text-decoration: none !important;
   text-align: center;
   min-width: 100px;
-  text-transform: uppercase;
 }
 
 .button-save {
-  font-family: 'Indie Flower', cursive;
-  color: #F78F84;
-  background: #425E77;
-  border: 1px solid #F78F84;
+  font-family: 'Raleway', sans-serif;
+  color: #F76B51;
+  background: #4b6b87;
+  border: 1px solid #F76B51;
   font-size: 12px;
   padding: 7px 12px;
   font-weight: normal;
@@ -109,34 +113,18 @@ a:hover {
   text-decoration: none;
   text-align: center;
   min-width: 70px;
-  text-transform: uppercase;
-}
-
-.size20 {
-  font-size: 20px;
-}
-
-.fontstyle {
-  color: #d1d3d3;
-  font-family: 'Indie Flower', cursive;
-}
-
-.text-fontstyle {
-  color: black;
-  font-family: 'Indie Flower', cursive;
-}
-
-.fontcaps {
-  color: #F78F84;
-  font-family: 'Indie Flower', cursive;
-  text-transform: uppercase;
 }
 
 .panel-default {
-  border: 2px solid #F78F84 !important;
-  background-color: #425E77 !important;
+  border: 2px solid #F76B51 !important;
+  background-color: #4b6b87 !important;
 }
 
 .glyphicon-check {
-  color: #F78F84;
+  color: #F76B51;
 }
+
+
+// font-family: 'Patrick Hand SC', cursive;
+// font-family: 'Shadows Into Light', cursive;
+// font-family: 'Raleway', sans-serif;

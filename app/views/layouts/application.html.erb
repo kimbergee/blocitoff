@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ListSeven7</title>
+
+  <title>kioku</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Shadows+Into+Light|Raleway:100" rel="stylesheet">
 
 </head>
 <body>
 
   <div class="container">
     <div class="navbar">
-    <ul class="nav nav-tabs" id="nav-barline">
+    <ul class="nav nav-tabs">
       <li><%= link_to "home", welcome_index_path, :class => 'navbuttons' %></li>
       <li><%= link_to "about", welcome_about_path, :class => 'navbuttons' %></li>
       <div class="pull-right user-info">
         <% if user_signed_in? %>
-          <p id="peach">Signed in as: <strong><%= link_to current_user.username.capitalize, users_show_path, :class => 'link' %></strong> |
+          <p class="peach-color">Signed in as: <strong><%= link_to current_user.username.capitalize, users_show_path, :class => 'link' %></strong> |
             <%= link_to 'Edit profile', edit_user_registration_path, :class => 'link' %> - <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'link'  %>
           <% else %>
-            <%= link_to "sign up", new_user_registration_path, :class => 'link'  %> -
             <%= link_to "sign in", new_user_session_path, :class => 'link'  %>
           </p>
         <% end %>

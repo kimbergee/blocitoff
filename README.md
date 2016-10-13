@@ -1,4 +1,4 @@
-##ListSeven7
+##kioku
 This is a self-destructing to-do list application that uses rake automation.
 
 ##Features
@@ -15,7 +15,7 @@ $ bundle install
 
 Run the project on your local server:
 ```
-rails s
+$ rails s
 ```
 
 

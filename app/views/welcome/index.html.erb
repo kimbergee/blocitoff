@@ -1,14 +1,18 @@
 <br>
 <style type="text/css">
-   body { background: #425E77 !important; }
+   body { background: #4b6b87 !important; }
 </style>
 
 <div class="jumbotron">
   <center>
-    <h1 id="non-caps">ListSeven7</h1>
-    <p id="peach">The most efficient to-do list</p>
+    <div class="app-name">kioku</div>
+    <div class="raleway-text">The most efficient to-do list</div>
+
+    <br>
+    <%= image_tag("flatbread.png") %>
 
     <% unless user_signed_in? %>
+    <br><br><br>
       <p>
     		<%= link_to "Sign Up", new_user_registration_path, :class => 'main-signup' %>
       </p>

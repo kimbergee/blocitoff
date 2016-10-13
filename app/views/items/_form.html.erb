@@ -1,4 +1,4 @@
-<h3 class="fontcaps"><em>Add an item to your list</em></h3>
+<h4 id="peach"><em>Add an item to your list</em></h4>
 <%= form_for [user, Item.new], remote: true do |f| %>
   <div class="form-group">
     <%= f.text_field :name, class: 'form-control', placeholder: "Enter item" %>
