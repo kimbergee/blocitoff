@@ -1,5 +1,8 @@
-##kioku
-This is a self-destructing to-do list application that uses rake automation.
+##Kioku
+A self-destructing to-do list application that uses rake automation.
+
+##Preview
+![kiokuror](/app/assets/images/kiokuror-small.png)
 
 ##Features
 + Users sign up for an account which will allow them to add to-do items to their list.
